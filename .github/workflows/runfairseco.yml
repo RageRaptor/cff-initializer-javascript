@@ -23,6 +23,8 @@ jobs:
                 path: FAIRSECO_Assets
                 ref: 'NBF-239-Test-External-Repos'
             - uses: QDUNI/FairSECO@NBF-239-Test-External-Repos
+              with:
+                  myToken: ${{ secrets.GITHUB_TOKEN }}
             - uses: actions/upload-artifact@v3
               with:
                   name: FairSECO Result
